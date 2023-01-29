@@ -8,7 +8,8 @@ CFLAGS = -Wall -Werror -Wextra -g3
 SRCS = ./sources/main.c			\
 		./sources/validations.c	\
 		./sources/stack.c		\
-		./sources/utils.c
+		./sources/utils.c		\
+		./sources/rotate.c		\
 
 OBJS    = $(SRCS:%.c=%.o)
 

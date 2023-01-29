@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 13:05:12 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/28 17:13:00 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/01/29 16:07:48 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,15 @@ int main(int argc, char **argv)
 		exit(1);
 	if (!validate_args(argc, argv))
 	{
-		write(1, "Error\n", 6);
+		ft_putendl_fd("Error", 1);
 		exit(1);
 	}
 	a = (t_stack){NULL, 0};
 	// b = (t_stack){NULL, 0};
 	create_stack(argc, argv, &a);
-	if (!is_sorted(a.head))
+	if (!is_sorted(a.top))
 	{
-		ft_printf("sa\n");
+		ra(&a);
 	}
 	return (0);
 }

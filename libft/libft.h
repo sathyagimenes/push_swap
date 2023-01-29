@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 01:49:49 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/28 17:25:56 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/01/29 17:09:44 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,14 @@ typedef struct s_list
  * @param content to create the node with.
  * @return The new node.
 **/
-t_list	*ft_lstnew(void *content);
+t_list	*ft_newnode(void *content);
+
+/**
+ * @brief Returns the last node.
+ * @param list where to search.
+ * @return The last node.
+**/
+t_list	*ft_lastnode(t_list *list);
+
 
 #endif

@@ -43,7 +43,8 @@ SRCS	= ft_isalpha.c	\
 		ft_convert_to_base.c	\
 		ft_printf.c		\
 		ft_atol.c		\
-		ft_lstnew.c
+		ft_newnode.c	\
+		ft_lastnode.c
 
 UTILS	= ./utils/printf_type_c.c	\
 		./utils/printf_type_d_i.c	\

@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 01:49:49 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/29 17:09:44 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/01/30 21:01:57 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,14 @@ t_list	*ft_newnode(void *content);
  * @return The last node.
 **/
 t_list	*ft_lastnode(t_list *list);
+
+/**
+ * @brief Returns the node at the given position.
+ * @param list where to search.
+ * @param n position of required node.
+ * @return The node at the given position.
+**/
+t_list	*ft_getnode(t_list *list, unsigned int n);
 
 
 #endif

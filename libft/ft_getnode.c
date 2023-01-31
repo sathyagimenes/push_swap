@@ -1,41 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rotate.c                                           :+:      :+:    :+:   */
+/*   ft_getnode.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/29 15:54:16 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/30 21:00:30 by sde-cama         ###   ########.fr       */
+/*   Created: 2023/01/30 20:09:34 by sde-cama          #+#    #+#             */
+/*   Updated: 2023/01/30 20:13:15 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "libft.h"
 
-void	ra(t_stack *a)
+t_list	*ft_getnode(t_list *list, unsigned int n)
 {
-	if(a->size > 1)
+	if(!list)
+		return (NULL);
+	while(n--)
 	{
-		ft_putendl_fd("ra", 1);
-		stack_shift_up(a);
+		if (!list)
+			break;
+		list = list->next;
 	}
-}
-
-void	rb(t_stack *b)
-{
-	if(b->size > 1)
-	{
-		ft_putendl_fd("rb", 1);
-		stack_shift_up(b);
-	}
-}
-
-void	rr(t_stack *a, t_stack *b)
-{
-	if(a->size > 1 && b->size > 1)
-	{
-		ft_putendl_fd("rr", 1);
-		stack_shift_up(a);
-		stack_shift_up(b);
-	}
+	return (list);
 }

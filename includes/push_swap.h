@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 12:52:09 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/29 17:29:56 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/01/30 20:58:54 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ void	rb(t_stack *b);
 void	rr(t_stack *a, t_stack *b);
 void	*stack_pop(t_stack *stack);
 void	stack_shift_up(t_stack *stack);
+void	stack_shift_down(t_stack *stack);
 
 #endif

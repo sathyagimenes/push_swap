@@ -5,11 +5,14 @@ LIB = libft/libft.a
 CC = cc
 CFLAGS = -Wall -Werror -Wextra -g3
 
-SRCS = ./sources/main.c			\
-		./sources/validations.c	\
-		./sources/stack.c		\
-		./sources/utils.c		\
-		./sources/rotate.c		\
+SRCS = ./sources/main.c				\
+		./sources/validations.c		\
+		./sources/stack.c			\
+		./sources/utils.c			\
+		./sources/push.c			\
+		./sources/swap.c			\
+		./sources/rotate.c			\
+		./sources/reverse_rotate.c
 
 OBJS    = $(SRCS:%.c=%.o)
 

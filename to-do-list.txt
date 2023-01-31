@@ -1,3 +1,4 @@
-falta fazer o shift down
-seguir fazendo os os comandos (ra, pa...)
-
+fazer os sort:
+small
+medium
+large

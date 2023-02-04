@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 12:52:09 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/30 21:26:50 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/01/31 21:11:06 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ typedef struct s_stack
 int		main(int argc, char **argv);
 int		validate_args(int argc, char **argv);
 t_bool	is_sorted(t_list *list);
+void	*get_min(t_list *list);
+void	*get_max(t_list *list);
 void	stack_push(t_stack *stack, void *content);
 void	*stack_pop(t_stack *stack);
 void	stack_shift_up(t_stack *stack);
@@ -47,5 +49,6 @@ void	rr(t_stack *a, t_stack *b);
 void	rra(t_stack *a);
 void	rrb(t_stack *b);
 void	rrr(t_stack *a, t_stack *b);
+void	small_sort(t_stack *a);
 
 #endif

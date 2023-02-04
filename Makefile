@@ -12,7 +12,8 @@ SRCS = ./sources/main.c				\
 		./sources/push.c			\
 		./sources/swap.c			\
 		./sources/rotate.c			\
-		./sources/reverse_rotate.c
+		./sources/reverse_rotate.c	\
+		./sources/sort.c
 
 OBJS    = $(SRCS:%.c=%.o)
 

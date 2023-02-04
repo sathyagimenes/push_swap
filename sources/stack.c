@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 16:34:25 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/30 20:59:54 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/04 09:24:43 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void stack_push(t_stack *stack, void *content)
 	t_list *top;
 
 	top = ft_newnode(content);
-	top->next = stack->top;
+	if (stack->top)
+		top->next = stack->top;
 	stack->top = top;
 	stack->size++;
 }

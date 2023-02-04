@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 13:05:12 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/29 16:07:48 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/01 20:35:16 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	create_stack(int argc, char **argv, t_stack *stack);
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_stack	a;
 	// t_stack	b;
@@ -31,7 +31,8 @@ int main(int argc, char **argv)
 	create_stack(argc, argv, &a);
 	if (!is_sorted(a.top))
 	{
-		ra(&a);
+		if(argc < 5)
+			small_sort(&a);
 	}
 	return (0);
 }
@@ -41,9 +42,9 @@ static int	create_stack(int argc, char **argv, t_stack *stack)
 	long temp;
 	int *content;
 
-	while (argc)
+	while (--argc)
 	{
-		temp = ft_atol(argv[argc-- - 1]);
+		temp = ft_atol(argv[argc]);
 		content = malloc(sizeof(*content));
 		if (!content)
 			return (1);

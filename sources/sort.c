@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/29 15:13:51 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/02/04 15:03:07 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/04 15:24:04 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,13 @@ void	medium_sort(t_stack *a, t_stack *b)
 			pb(b, a);
 		else if(*(int *)a->top->next->content == min)
 			sa(a);
+		else if(*(int *)ft_lastnode(a->top)->content == min)
+			rra(a);
 		else
+		{
 			ra(a);
+			ra(a);
+		}
 	}
 	if (!is_sorted(a->top))
 		small_sort(a);

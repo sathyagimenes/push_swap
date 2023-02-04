@@ -37,6 +37,9 @@ run3:		$(NAME)
 run5:		$(NAME)
 				ARG="1 5 2 4 3"; ./push_swap $$ARG | wc -l; ./push_swap $$ARG | ./checker_linux $$ARG
 
+runRandom5:	$(NAME)
+				ARG=$$(seq  5 | shuf | tr '\n' ' '); ./push_swap $$ARG | wc -l; ./push_swap $$ARG | ./checker_linux $$ARG; echo $$ARG
+
 run100:		$(NAME)
 				ARG=$$(seq  100 | shuf | tr '\n' ' '); ./push_swap $$ARG | wc -l; ./push_swap $$ARG | ./checker_linux $$ARG
 

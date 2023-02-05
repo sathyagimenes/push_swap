@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 01:49:49 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/30 21:01:57 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/04 20:48:17 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,5 +109,16 @@ t_list	*ft_lastnode(t_list *list);
 **/
 t_list	*ft_getnode(t_list *list, unsigned int n);
 
+/**
+ * @brief Deletes the list.
+ * @param list to be deleted.
+**/
+void	ft_dellist(t_list **list);
+
+/**
+ * @brief Deletes the node.
+ * @param node to be deleted.
+**/
+void	ft_delnode(t_list *node);
 
 #endif

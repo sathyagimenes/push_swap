@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/29 15:13:51 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/02/04 15:27:36 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/06 20:53:19 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,10 @@ void	medium_sort(t_stack *a, t_stack *b)
 		small_sort(a);
 	while (b->size)
 		pa(a, b);
+}
+
+void	large_sort(t_stack *a, t_stack *b)
+{
+	if (a != b)
+	ft_printf("sa");
 }

@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 13:05:12 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/02/04 20:24:54 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/06 18:58:58 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ int	main(int argc, char **argv)
 			small_sort(&a);
 		else if(argc < 7)
 			medium_sort(&a, &b);
-		// else
-		// 	large_sort(&a, &b);
+		else
+			large_sort(&a, &b);
 	}
 	ft_dellist(&a.top);
 	return (0);

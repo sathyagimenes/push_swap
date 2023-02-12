@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 13:05:12 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/02/11 21:21:01 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/12 14:57:21 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,6 @@ int	main(int argc, char **argv)
 		else
 		large_sort(&a, &b);
 	}
-	// ft_printf("Sorted Array:n");
-	// for (int i = 0; i < a.size; i++)
-	// {
-	// 	t_list *node = ft_getnode(a.top, i);
-	// 	ft_printf("\n%d", *(int *)node->content);
-	// }
 	ft_dellist(&a.top);
 	return (0);
 }

@@ -5,3 +5,12 @@
 the lowest possible number of actions. To succeed you’ll have to manipulate various
 types of algorithms and choose the most appropriate solution (out of many) for an
 optimized data sorting."
+
+<h2>Usage</h2>
+
+<p><strong>Run on terminal:</strong></p>
+./push_swap <list>
+The list provided must attend the following condition:
+
+- Must contain only intergers;
+- Do not contain duplicated arguments;

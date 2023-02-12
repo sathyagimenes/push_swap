@@ -1,4 +1,0 @@
-fazer os sort:
-small
-medium
-large

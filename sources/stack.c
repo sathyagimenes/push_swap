@@ -6,15 +6,15 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 16:34:25 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/02/04 09:24:43 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/12 19:55:40 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void stack_push(t_stack *stack, void *content)
+void	stack_push(t_stack *stack, void *content)
 {
-	t_list *top;
+	t_list	*top;
 
 	top = ft_newnode(content);
 	if (stack->top)
@@ -58,7 +58,7 @@ void	stack_shift_down(t_stack *stack)
 	t_list	*bottom;
 
 	bottom = ft_lastnode(stack->top);
-	if(bottom)
+	if (bottom)
 	{
 		bottom->next = stack->top;
 		stack->top = bottom;

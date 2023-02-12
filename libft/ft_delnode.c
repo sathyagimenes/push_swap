@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 20:26:37 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/02/04 20:52:49 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/12 19:50:47 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_delnode(t_list *node)
 {
-	if(node)
+	if (node)
 	{
 		free(node->content);
 		free(node);

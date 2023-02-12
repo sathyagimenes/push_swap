@@ -6,16 +6,16 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 12:53:12 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/28 12:59:54 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/12 19:49:44 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long ft_atol(const char *nptr)
+long	ft_atol(const char *nptr)
 {
-	long long num;
-	int sign;
+	long long	num;
+	int			sign;
 
 	num = 0;
 	sign = 1;

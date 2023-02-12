@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 17:13:43 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/02/12 13:14:54 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/12 19:56:40 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@ void	*get_min(t_list *list)
 {
 	void	*min;
 
-	if(!list)
+	if (!list)
 		return (NULL);
 	min = list->content;
-	while(list)
+	while (list)
 	{
-		if(*(int *)list->content < *(int *)min)
+		if (*(int *)list->content < *(int *)min)
 			min = list->content;
 		list = list->next;
 	}
@@ -45,12 +45,12 @@ void	*get_max(t_list *list)
 {
 	void	*max;
 
-	if(!list)
+	if (!list)
 		return (NULL);
 	max = list->content;
-	while(list)
+	while (list)
 	{
-		if(*(int *)list->content > *(int *)max)
+		if (*(int *)list->content > *(int *)max)
 			max = list->content;
 		list = list->next;
 	}

@@ -6,13 +6,13 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 12:57:17 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/02/12 14:59:35 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/12 19:53:01 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void	index_stack(t_stack *stack);
+static void		index_stack(t_stack *stack);
 static t_stack	ft_sortlist(t_stack *stack);
 static t_stack	ft_dupstack(t_stack *stack);
 
@@ -21,22 +21,22 @@ void	large_sort(t_stack *a, t_stack *b)
 	int	i;
 	int	n;
 	int	size;
-	index_stack(a);
 
+	index_stack(a);
 	i = 0;
 	size = a->size;
-	while(!is_sorted(a->top))
+	while (!is_sorted(a->top))
 	{
 		n = 0;
-		while(n++ < size)
+		while (n++ < size)
 		{
-			if((*(int *)a->top->content >> i) & 1)
+			if ((*(int *)a->top->content >> i) & 1)
 				ra(a);
 			else
-				pb(b,a);
+				pb(b, a);
 		}
-		while(b->size)
-			pa(a,b);
+		while (b->size)
+			pa(a, b);
 		i++;
 	}
 }
@@ -50,11 +50,11 @@ static void	index_stack(t_stack *stack)
 
 	sorted = ft_sortlist(stack);
 	node = stack->top;
-	while(node)
+	while (node)
 	{
 		sorted_node = sorted.top;
 		i = 0;
-		while(i < sorted.size)
+		while (i < sorted.size)
 		{
 			if (*(int *)node->content == *(int *)sorted_node->content)
 				*(int *)node->content = i;

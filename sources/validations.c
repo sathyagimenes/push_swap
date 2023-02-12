@@ -6,17 +6,17 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 13:14:17 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/28 14:53:50 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/12 19:58:19 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int is_int(char **argv);
-static int between_min_max(char **argv, int argc);
-static int not_twice(char **argv, int argc);
+static int	is_int(char **argv);
+static int	between_min_max(char **argv, int argc);
+static int	not_twice(char **argv, int argc);
 
-int validate_args(int argc, char **argv)
+int	validate_args(int argc, char **argv)
 {
 	if (!is_int(argv))
 		return (0);
@@ -28,10 +28,10 @@ int validate_args(int argc, char **argv)
 	return (1);
 }
 
-static int is_int(char **argv)
+static int	is_int(char **argv)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	i = 1;
 	while (argv[i])
@@ -50,23 +50,14 @@ static int is_int(char **argv)
 	return (1);
 }
 
-static int between_min_max(char **argv, int argc)
+static int	between_min_max(char **argv, int argc)
 {
-	long int x;
-	int i;
+	long int	x;
+	int			i;
 
 	i = 0;
 	while (++i < argc)
 	{
-		// x = ft_strlen(argv[i]);
-		// if (x > 11)
-		// 	return (0);
-		// if (x == 11)
-		// 	if (argv[i][0] != '-' || argv[i][1] > '2' || argv[i][2] > '1')
-		// 		return (0);
-		// if (x == 10)
-		// 	if (argv[i][0] > '2' || argv[i][1] > '1')
-		// 		return (0);
 		x = ft_atol(argv[i]);
 		if (x > 2147483647 || x < -2147483648)
 			return (0);
@@ -74,10 +65,10 @@ static int between_min_max(char **argv, int argc)
 	return (1);
 }
 
-static int not_twice(char **argv, int argc)
+static int	not_twice(char **argv, int argc)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 1;
 	while (i < argc - 1)

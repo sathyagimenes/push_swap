@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 01:49:49 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/02/11 18:46:08 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/12 19:50:34 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@
 # define TRUE 1
 # define FALSE 0
 
-typedef int	t_bool;
-
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
 # include <limits.h>
 # include <stdarg.h>
+
+typedef int	t_bool;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

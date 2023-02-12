@@ -6,7 +6,7 @@
 /*   By: sde-cama <sde-cama@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 20:09:34 by sde-cama          #+#    #+#             */
-/*   Updated: 2023/01/30 20:13:15 by sde-cama         ###   ########.fr       */
+/*   Updated: 2023/02/12 19:51:09 by sde-cama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 t_list	*ft_getnode(t_list *list, unsigned int n)
 {
-	if(!list)
+	if (!list)
 		return (NULL);
-	while(n--)
+	while (n--)
 	{
 		if (!list)
-			break;
+			break ;
 		list = list->next;
 	}
 	return (list);
